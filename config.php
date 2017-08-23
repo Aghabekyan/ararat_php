@@ -1,7 +1,7 @@
 <?php
 	/* startup configs */
 	define('bDIR',dirname(__FILE__));
-	define('htmDIR','/nyut/');
+	define('htmDIR','/');
 	define('bURL','http://nyut.am/');
 	define('admDIR','admin/');
 	define('ROUTES', bDIR . '/engine/routes/');
@@ -17,7 +17,7 @@
 	$settings = array(
 		'server' => '127.0.0.1',
 		'username' => 'root',
-		'password' => '',
+		'password' => 'fanatik',
 		'db' => 'nyut',
 		'port' => 3306,
 		'charset' => 'utf8'
