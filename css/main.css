@@ -1,0 +1,1086 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Suro Start */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+	height:10px;
+	background-color:#ffffff;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #2064A1; 
+	background-image:url(../img/scroll.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #2064A1; 
+	background-image:url(../img/scroll.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+/* web fonts */
+@font-face {
+    font-family:'arnamu';
+    src: url('../web-fonts/arnamu.eot');
+    src: url('../web-fonts/arnamu.eot?#iefix') format('embedded-opentype'),
+         url('../web-fonts/arnamu.woff') format('woff'),
+         url('../web-fonts/arnamu.ttf') format('truetype'),
+         url('../web-fonts/arnamu.svg#ArianAMURegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	font-family:arial, 'arnamu';
+}
+
+/* pageination */
+.pagination {
+	height: 25px;
+}
+.pagination a {
+	display: block;
+	height: 21px;
+	font-size: 14px;
+	line-height: 23px;
+	padding: 0 7px;
+	background-color: #E2E1E1;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#E2E1E1));
+	background-image: -webkit-linear-gradient(top,#ffffff,#E2E1E1);
+	background-image: -moz-linear-gradient(top,#ffffff,#E2E1E1);
+	background-image: -ms-linear-gradient(top,#ffffff,#E2E1E1);
+	background-image: -o-linear-gradient(top,#ffffff,#E2E1E1);
+	background-image: linear-gradient(top,#ffffff,#E2E1E1);
+	margin-bottom: 10px;
+	float: left;
+	border-radius: 4px;
+	border: 1px solid #D1D1D1;
+	text-decoration: none;
+	color: #4E4E4E;
+	text-shadow: 1px 1px 0 white;
+	border-bottom: 1px solid #B8B8B8;
+	font-weight: 800;
+	margin-right: 5px;
+}
+.pagination a:hover {
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#E2E1E1),to(#ffffff));
+	background-image: -webkit-linear-gradient(top,#E2E1E1,#ffffff);
+	background-image: -moz-linear-gradient(top,#E2E1E1,#ffffff);
+	background-image: -ms-linear-gradient(top,#E2E1E1,#ffffff);
+	background-image: -o-linear-gradient(top,#E2E1E1,#ffffff);
+	background-image: linear-gradient(top,#E2E1E1,#ffffff);
+	border-top: 1px solid #B8B8B8;
+	text-shadow: -1px -1px 0 white;
+}
+.activePage {
+	font-size: 15px !important;
+	border-color: #8F7676 !important;
+}
+
+body{
+	width:100%;
+	min-width:1000px;
+}
+
+header{
+	width:1200px;
+	height:110px;
+	background:url(../img/header.jpg) no-repeat right;
+	margin:0 auto;
+}
+.logo{
+	width:196px;
+	height:80px;
+	float:left;
+	margin:15px 0;
+}
+.logo a,.logo img{
+	display:block;
+	width:196px;
+	height:80px;
+}
+.headerRight{
+	width:950px;
+	height:80px;
+	float:right;
+	margin:15px 0;
+}
+.useFull{
+	height:30px;
+}
+
+.date{
+	float:left;
+	line-height:30px;
+}
+.date span{
+	font-size:14px;
+	color:silver;
+	
+}
+.date div{
+	display:inline;
+}
+.searchBox{
+	float:right;
+	margin-left:10px;
+	width:300px;
+	height:28px;
+	background-color:rgba(255, 255, 255, 0.8);
+	border:1px solid #2BA4FD;
+}
+.searchBox input{
+	float:left;
+	display:block;
+	border:none;
+	outline:none;
+	margin:0;
+	height:28px;
+	background-color:transparent;
+}
+.search{
+	padding:0 10px;
+	color:#333333;
+	font-size:14px;
+	width:250px;
+}
+.ssubmit{
+	width:28px;
+	padding:0;
+	background-image:url(../img/sbut.png);
+}
+.langBar{
+	float:right;
+}
+.langBar a{
+	display:block;
+	float:left;
+	color:#666666;
+	padding:0 9px;
+	line-height:30px;
+	height:28px;
+	text-decoration:none;
+	font-size:12px;
+	border:1px solid white;
+}
+.langBar a:hover,.currentLang{
+	border:1px solid #2AA3FD;
+}
+.current {
+	border:1px solid #2AA3FD !important;	
+}
+.menu{
+	height:30px;
+	margin-top:20px;
+	background-color:rgba(255,255,255,0.95);
+	margin-left:-8px;
+}
+.menu a{
+	display:block;
+	text-decoration:none;
+	float:left;
+	line-height:30px;
+	height:30px;
+	color:#2064A1;
+	padding:0 8px;
+	font-size:14px;
+	font-weight: bold;
+}
+.menu a:hover{
+	line-height:30px;
+	height:28px;
+	background-color:white;
+	border-bottom:2px solid #B3272E;
+}
+
+.runLine{
+	width: 98%;
+	height: 34px;
+	overflow: hidden;
+	padding: 0 1%;
+	box-shadow: 0 0 5px 1px rgb(123, 123, 123);
+	background-color: #2064A1;
+}
+.runLine a{
+	display:block;
+	float:left;
+	text-decoration:none;
+	line-height:32px;
+	padding:0 20px;
+}
+.runLine a span{
+	color:white;
+	font-size:14px;
+}
+.runLine a:hover{
+	color:#2064A1;
+}
+.runLine a time{
+	display:inline-block;
+	color:white;
+	font-weight:bold;
+	font-size:10px;
+	padding:0 6px;
+	line-height:20px;
+	text-shadow:none;
+    height: 20px;
+    border-left: 2px solid #fff;    
+	background-color: #B3272E;
+    box-shadow: inset 0 10px 0 0 #DE3840;
+}
+
+
+.main{
+	width:1200px;
+	margin:30px auto;
+}
+.mainLeft{
+	width:850px;
+	min-height:500px;
+	float:left;
+}
+
+
+.mainSlider{
+	background-color:white;
+}
+.mainSlider #thumbs-wrapper{
+	margin-top:10px;
+}
+.mainSlider  #carousel a, #thumbs a{
+	display: block;
+	float: left;
+	position:relative;
+	text-decoration:none;
+}
+.mainSlider  #thumbs a{
+	display:block;
+	margin-left:10px;
+	background-color:white;
+	border-bottom:2px solid white;
+	outline:none !important;
+}
+.mainSlider  #thumbs a:first-child{
+	margin-left:0;
+}
+.mainSlider #thumbs a img{
+    display: block;
+    width: 212px;
+    height: 130px;
+}
+.mainSlider  #thumbs a b{
+	display:block;
+	font-size:13px;
+	line-height:18px;
+	height:90px;
+	overflow:hidden;
+	color:#444444;
+	margin-top:10px;
+}
+.mainSlider #carousel a img{
+	display:block;
+	width:425px;
+	height:300px;
+	float:left;
+	margin-right:10px;
+}
+.mainSlider #carousel a time{
+	display:inline-block;
+	color:white;
+	font-size:10px;
+	padding:0 4px;
+	line-height:18px;
+    background-color: #2064A1;
+    height: 18px;
+    box-shadow: inset 0 10px 0 0 #286EB3;
+    border-left: 2px solid #B3272E;
+}
+.mainSlider #carousel a b{
+	display:block;
+	color:#3B4B53;
+	font-size:18px;
+	line-height:24px;
+	padding:10px;
+	padding-top:5px;
+}
+.mainSlider #carousel a span{
+	display:block;
+	color:gray;
+	font-size:14px;
+	line-height:18px;
+	padding:10px;
+	padding-top:0;
+}
+.mainSlider #carousel a {
+	position:relative;
+}
+.mainSlider #thumbs a {
+	overflow: hidden;
+}
+.mainSlider #thumbs a.selected {
+	border-bottom:2px solid #B3272E;
+}
+
+
+.mainRight{
+	width:320px;
+	min-height:500px;
+	float:right;
+}
+.titler{
+    background-color: #2064A1;
+    box-shadow: inset 0 16px 0 0 #286EB3;
+    border-left: 6px solid #B3272E;
+}
+.titler a,.titler span{
+	display:block;
+	text-decoration:none;
+	height:30px;
+	line-height:32px;
+	color:white;
+	text-decoration:none;
+	border-left:2px solid white;
+	padding-left:10px;
+	text-transform:uppercase;
+	font-size:15px;
+}
+.titler h1{
+	height:30px;
+	line-height:32px;
+	margin:0;
+	padding:0;
+	color:white;
+	border-left:2px solid white;
+	padding-left:10px;
+	text-transform:uppercase;
+	font-size:15px;
+}
+
+.timeLine{
+	height: 800px;
+	overflow:auto;
+	background-color:white;
+}
+.timeLineBlog{
+	height:479px;
+}
+.timeLine a{
+	display:block;
+	text-decoration:none;
+	padding:10px 5px;
+	position:relative;
+}
+.blogTimeline{
+    position: absolute;
+    width: 33px;
+    height: 19px;
+    background-image: url(../img/blog.png);
+    top: 0px;
+    left: 80px;
+}
+.timeLine a:nth-child(2n){
+	background-color:whitesmoke;
+	text-shadow:1px 1px 0 white;
+}
+.timeLinePop a:nth-child(2n){
+	background-color:white ;
+	text-shadow:none;
+}
+.timeLine a img{
+	display: block;
+	width: 100px;
+	height:60px;
+	float: left;
+	margin-right: 10px;
+}
+
+.timeLine a span{
+	font-size:15px;
+	color:#333333;
+	text-shadow:1px 1px 1px white;
+}
+.timeLine a span time{
+	display:inline-block;
+    color: white;
+    font-size: 10px;
+    padding: 0 4px;
+    line-height: 18px;
+    background-color: #2064A1;
+    height: 18px;
+    box-shadow: inset 0 10px 0 0 #286EB3;
+    border-left: 2px solid #B3272E;
+	text-shadow:none;
+}
+.catOnMainSQ{
+	width:420px;
+	float:left;
+	height:290px;
+	background-color:white;
+	margin-left:0;
+	margin-top:10px;
+}
+.catOnMainBox .catOnMainSQ:nth-child(2n){
+	margin-left:10px;
+}
+.catOnMainSQUnits a{
+	display:block;
+	text-decoration:none;
+	padding-top:10px;
+	margin-top:10px;
+	border-top:1px dashed #B3272E;
+}
+.catOnMainSQUnits a:first-child{
+	padding-top:0;
+	border-top:none;
+}
+.catOnMainSQUnits a img{
+	display:block;
+	width:180px;
+	height:120px;
+	float:left;
+}
+.catOnMainSQUnits a b{
+	display:block;
+	color:#333;
+	font-weight:normal;
+	font-size:16px;
+	line-height:20px;
+	max-height:40px;
+	overflow:hidden;
+	padding: 0 10px;
+}
+.catOnMainSQUnits a b time{
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    padding: 0 4px;
+    line-height: 18px;
+    background-color: #2064A1;
+    height: 18px;
+    box-shadow: inset 0 10px 0 0 #286EB3;
+    border-left: 2px solid #B3272E;
+	margin-right: 5px;
+}
+.facebookPlugin{
+	width:320px;
+	margin:10px 0;
+}
+.catOnMainHR{
+	margin-top:10px;
+	background-color:white;
+}
+.catOnMainHRBox a{
+    display: block;
+    float: left;
+    width: 205px;
+    margin-left: 10px;
+    margin-top: 10px;
+	text-decoration:none;
+}
+.catOnMainHRBox a:first-child{
+	margin-left:0;
+}
+.catOnMainHRBox a img{
+	width:205px;
+	height:130px;
+}
+.catOnMainHRBox a span{
+	display:block;
+	font-size:14px;
+	color:#333;
+	margin:10px 0;
+}
+.catOnMainHRBox a span time{
+	display: inline-block;
+	color: white;
+	font-size: 10px;
+	padding: 0 4px;
+	line-height: 18px;
+	background-color: #2064A1;
+	height: 18px;
+	box-shadow: inset 0 10px 0 0 #286EB3;
+	border-left: 2px solid #B3272E;
+}
+.timeLinePop{
+	height:400px;
+	margin-bottom:10px;
+}
+.selectPopRange{
+	display:block;
+	height:30px;
+	border:none;
+	outline:none;
+	width:100%;
+}
+.videoRama{
+	width:320px;
+	margin-top:10px;
+}
+.videoUnit a{
+	display:block;
+	width:320px;
+	height:200px;
+	position:relative;
+}
+.videoUnit a img{
+	display:block;
+	width:320px;
+	height:200px;
+}
+.videoUnit a span{
+	display: block;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 16px;
+}
+.playBut{
+	width:96px;
+	height:96px;
+	background:url(../img/fotorama.png) bottom;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-48px 0 0 -48px;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+	background-color:#000;
+	position:relative;
+	border-top: 3px solid #2064A1;
+}
+.footerLinksBox{
+	padding:10px 20px;
+}
+.footerLinks{
+	float:left;
+	border-left:1px solid #2064A1;
+	padding-left:20px;
+	min-height:190px;
+}
+.footerLinksBox .footerLinks:first-child{
+	padding-left:0;
+	border:none;
+}
+.linkBox{
+	float:left;
+	margin-right:25px;
+}
+.linkBox span{
+	display:block;
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.menuDubl{
+	float:left;
+	font-size:14px;
+	margin-right: 20px;
+}
+.linkBox a{
+	display:block;
+	text-decoration:none;
+	color:white;
+	font-size:14px;
+}
+.linkBox a:hover{
+	text-decoration:underline;
+}
+.footerLinksTitle{
+	color:#2064A1;
+	line-height:30px;
+}
+.copy{
+	border-top:1px solid #2064A1;
+	padding:15px 20px;
+	margin-top:15px;
+	color:white;
+	font-size:14px;
+}
+.signatures{
+	float:right;
+	width:180px;
+	margin-top:50px;
+}
+.signatures a{
+	display:block;
+	text-decoration:none;
+	margin-bottom:10px;
+	text-align:right;
+}
+.signatures a span{
+	display:inline-block;
+	color:white;
+	font-size:11px;
+	margin-bottom:5px;
+}
+.signatures a img{
+	display:inline-block;
+	height:35px;
+}
+
+
+
+
+/* Show Page */
+
+
+.news{
+	padding:10px;
+	background-color:white;
+}
+.news h1{
+	padding:0;
+	margin:0;
+	margin-bottom:10px;
+}
+.news time{
+	font-size:12px;
+	line-height:12px;
+	margin-bottom:5px;
+	color:gray;
+}
+.recomendBox{
+	width:620px;
+	height:21px;
+	margin-bottom:10px;
+}
+.recomendBoxUnit{
+	width:221px;
+	float:left;
+	overflow:hidden;
+	margin-right:10px;
+}
+.news p{
+	padding:10px 10px 10px 20px;
+	margin:0;
+	text-align:justify;
+}
+.articleImge{
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:2px solid whitesmoke;
+}
+.articleImge img{
+	display:block;
+	width:600px;
+}
+.articleVideo{
+	padding:10px 0;
+	margin:10px 0;
+	border-top:2px solid whitesmoke;
+	border-bottom:2px solid whitesmoke;
+	border-top:2px solid whitesmoke;
+}
+.articleInner{
+	float:right;
+	width:241px;
+}
+.suggestions{
+	width:220px;
+	min-height:50px;
+	border: 1px solid #E4E4E4;
+	background-color:whitesmoke;
+	padding:10px;
+	margin:10px;
+	margin-right:0;
+}
+.suggestions ul{
+	margin:0;
+	padding:0;
+	list-style-image:url(../img/li.png);
+	margin-left: 13px;
+}
+.suggestions h4{
+	margin:0;
+	padding:0;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	border-bottom: 1px solid #E4E4E4;
+	width:211px;
+}
+.suggestions li{
+	margin:0;
+	padding:0;
+}
+.suggestions a{
+	display:block;
+	color:#333333;
+	text-shadow:1px 1px 0 white;
+	text-decoration:none;
+	margin-bottom:5px;
+	font-size:14px;
+}
+.suggestions a:hover{
+	text-decoration:underline;
+}
+.articleShaher{
+	padding:5px 10px;
+	border-top:1px solid whitesmoke;
+	border-bottom:1px solid whitesmoke;
+}
+.articleComments{
+	padding:10px;
+}
+.yashare-auto-init{
+	float:right;
+}
+
+
+
+
+/* Cat Page */
+
+
+.catPageUnit{
+}
+.catPageUnit a{
+	display:block;
+	text-decoration:none;
+	padding:10px;
+	transition: all 0.5s ease;
+}
+.catPageUnit a:hover{
+	background-color:whitesmoke;
+	transition: all 0.5s ease;
+}
+.catPageUnit b{
+	display:block;
+	color:#333333;
+	font-size:22px;
+	line-height:28px;
+	margin-bottom:10px;
+}
+.catPageUnitDesc{
+	line-height:19px;
+	height:150px;
+	overflow:hidden;
+}
+.catPageUnitDesc img{
+	display:block;
+	float:left;
+	margin-right:10px;
+	width:240px;
+	height:150px;
+}
+.catPageUnitDesc span{
+	color:gray;
+	font-size:14px;
+}
+.weatherDesc, .weatherCity, .weatherImage {
+	display: none !important;
+}
