@@ -64,7 +64,7 @@
 
 		if(!empty($args['limit'])) {
 
-		$res = $db->select("SELECT `id`,`title`,`published`,`img`,`youtube`,`desc`
+		$res = $db->select("SELECT `id`,`title`,`published`,`img`,`youtube`
 							FROM `content`
 							WHERE `published` < NOW()
 							AND   `state` = 1

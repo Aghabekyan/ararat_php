@@ -30,7 +30,6 @@
 	);
 	
 	require (MODELS . 'model_header.php');
-	require (MODELS .  '/model_right.php');
 
 	
 

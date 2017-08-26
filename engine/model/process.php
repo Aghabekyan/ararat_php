@@ -72,24 +72,18 @@
 
 		$data = array();
 
-
 		foreach($slider_data as $key => $value) {
 
-			$desc = strip_tags($value['desc']);
+			$youtube = array();
+			if (!empty($value['youtube'])) {
+				$youtube = json_decode($value['youtube'], true);
+				$youtube = $youtube[0];	
+			}
 
-			$data['big'][$key] = array(
+			$data[$key] = array(
 				'id'    => $value['id'],
-				'title' => strip_tags($value['title']),
-				'desc'  => mb_strlen($desc, 'UTF-8') > 500 ? mb_substr($desc, 0, 500, 'UTF-8').'...' : $desc,
-				'img'   => !empty($value['img']) ? ret_img($value['img'], 425, 300) : (!empty($value['youtube']) ? yt_img($value['youtube'], 300, 200) : ''),
-				'date'  => convertDate('Y-m-d G:i:s', 'G:i',$value['published']),
-				'url'   => createURL("p={$value['id']}", $value['title']),
-			);
-
-			$data['small'][$key] = array(
-				'id'    => $value['id'],
-				'title' => strip_tags($value['title']),
-				'img'   => !empty($value['img']) ? ret_img($value['img'], 212, 130) : (!empty($value['youtube']) ? yt_img($value['youtube'], 150, 90) : ''),
+				'title' => strip_tags($value['title']),	
+				'img'   	=> !empty($value['img']) ? thumb($value['img'], 680, 480) : (!empty($youtube) ? yt_img($youtube, 680, 480) : ''),				
 				'date'  => convertDate('Y-m-d G:i:s', 'G:i',$value['published']),
 				'url'   => createURL("p={$value['id']}", $value['title']),
 			);	

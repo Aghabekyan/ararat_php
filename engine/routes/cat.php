@@ -7,13 +7,11 @@
 
 	
 	require(bDIR.'/engine/model/model_header.php');
-	require(bDIR.'/engine/model/model_left.php');
-	require(bDIR.'/engine/model/model_right.php');
 	
 	
 
 	$res = pageination(array(
-			'showOnPage' => 14,
+			'showOnPage' => 4,
 			'pagination_url' => "cat={$cat_id}",
 			'page' => isset($_GET['paged']) ? intval($_GET['paged']) : 1,
 			'query' => array(
@@ -30,7 +28,7 @@
 							'bind' => array($cat_id, $lang['name'])
 						),
 					'res' => array(
-							'query' => "SELECT t1.`id`,`title`,`desc`,`img`,`published`, t2.`cat_id`
+							'query' => "SELECT t1.`id`,`title`,`desc`,`img`,`published`, `youtube`, t2.`cat_id`
 										FROM `content` t1
 										JOIN `category_rel` t2
 										ON    t1.id = t2.id
@@ -57,12 +55,19 @@
 			$post_time = convertDate('Y-m-d G:i:s', 'Y:m:d', $value['published']);
 			$current_time = date('Y:m:d', time());
 	
+			$youtube = array();
+			if (!empty($value['youtube'])) {
+				$youtube = json_decode($value['youtube'], true);
+				$youtube = $youtube[0];	
+			}
+
+
 			$data[] = array(
 				'id' 	=> $value['id'],
 				'title' => mb_strlen($title, 'UTF-8') > 83 ? mb_substr($title, 0, 80, 'UTF-8').'...' : $title,
 				'desc' 	=> mb_strlen($desc, 'UTF-8') > 180 ? mb_substr($desc, 0, 177, 'UTF-8').'...' : $desc,
 				'url'   => createURL("p={$value['id']}", $value['title']),
-				'img' 	=> thumb($value['img'], 240, 150),
+				'img'   	=> !empty($value['img']) ? thumb($value['img'], 240, 150) : (!empty($youtube) ? yt_img($youtube, 240, 150) : ''),	
 				'date' 	=> $post_time == $current_time ? $t['items']['today'].' - '.convertDate('Y-m-d G:i:s', 'G:i',$value['published']) : $value['published'],	
 			);
 		}

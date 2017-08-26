@@ -1,8 +1,8 @@
 <?php
 	/* startup configs */
 	define('bDIR',dirname(__FILE__));
-	define('htmDIR','/');
-	define('bURL','http://nyut.am/');
+	define('htmDIR',"/");
+	define('bURL','/');
 	define('admDIR','admin/');
 	define('ROUTES', bDIR . '/engine/routes/');
 	define('TEMPLATES', bDIR . '/engine/templates/');
