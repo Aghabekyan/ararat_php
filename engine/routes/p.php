@@ -22,7 +22,8 @@
 		'hits'    => $res['hits'],
 		'gallery' => unserialize($res['gallery']),
 		'date'    => "{$time} - {$day}/{$month}/{$year}",
-		'url'     => createbURL("p={$res['id']}"),
+		'url'     => createbURL("p={$res['id']}"),	
+		'yt_img'  => !empty($value['youtube']) ? 1 : 0,
 
 		'fb_url'  => createbURL("p={$res['id']}"),
 		'fb_img'  => bURL . "timthumb.php?src={$res['img']}&w=600&h=400",
@@ -60,7 +61,7 @@
 
 
 	
-	$page_title = 'Nyut.am | ' . $data['title'];
+	$page_title = 'Ararat TV | ' . $data['title'];
 		
 	require(bDIR.'/engine/templates/header.php');
 	require(bDIR.'/engine/templates/p.php');

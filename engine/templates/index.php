@@ -188,7 +188,7 @@
 					<h3>Հայլուր</h3>
 					<ul>
 	    				<? foreach($getcat[2] as $key => $value): ?>	
-							<li class="col-50 icon-youtube-play">
+							<li class="col-50 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<a href="<?= $value['url'] ?>">
 									<img src="<?= $value['img'] ?>">
 									<h4 class="title-date">
@@ -204,7 +204,7 @@
 					<h3>Նաիրյան Արկածներ<span>Կրկ, 22:00</span></h3>
 					<ul>
 	    				<? foreach($getcat[2] as $key => $value): ?>	
-							<li class="col-50 icon-youtube-play">
+							<li class="col-50 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<a href="<?= $value['url'] ?>">
 									<img src="<?= $value['img'] ?>">
 									<h4 class="title-date">
@@ -219,8 +219,8 @@
 				<div class="col-50">
 					<h3>Շտապ Օգնություն<span>Երկ - Ուրբ, 19:00</span></h3>
 					<ul>
-	    				<? foreach($getcat[2] as $key => $value): ?>	
-							<li class="col-50 icon-youtube-play">
+	    				<? foreach($getcat[2] as $key => $value): ?>
+							<li class="col-50 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<a href="<?= $value['url'] ?>">
 									<img src="<?= $value['img'] ?>">
 									<h4 class="title-date">
@@ -236,7 +236,7 @@
 					<h3>Անտիպատմություն<span>Ամեն օր, 17:00</span></h3>
 					<ul>
 	    				<? foreach($getcat[2] as $key => $value): ?>	
-							<li class="col-50 icon-youtube-play">
+							<li class="col-50 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<a href="<?= $value['url'] ?>">
 									<img src="<?= $value['img'] ?>">
 									<h4 class="title-date">
@@ -251,8 +251,8 @@
 				<div class="col-50">
 					<h3>Տոհմածառ<span>Երք 18:00</span></h3>
 					<ul>
-	    				<? foreach($getcat[2] as $key => $value): ?>	
-							<li class="col-50 icon-youtube-play">
+	    				<? foreach($getcat[2] as $key => $value): ?>
+							<li class="col-50 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<a href="<?= $value['url'] ?>">
 									<img src="<?= $value['img'] ?>">
 									<h4 class="title-date">
@@ -267,8 +267,8 @@
 				<div class="col-50">
 					<h3>Օպոնենտ<span>Երկ, Չրք, 19:30</span></h3>
 					<ul>
-	    				<? foreach($getcat[2] as $key => $value): ?>	
-							<li class="col-50 icon-youtube-play">
+	    				<? foreach($getcat[2] as $key => $value): ?>
+							<li class="col-50 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<a href="<?= $value['url'] ?>">
 									<img src="<?= $value['img'] ?>">
 									<h4 class="title-date">
@@ -288,7 +288,7 @@
 			<h2 class="heading">Ամենադիտվածը</h2>
 			<ul class="list-inline">
 				<? foreach($most_viewed as $key => $value): ?>
-					<li class="col-25 icon-youtube-play">
+					<li class="col-25 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 						<a href="<?= $value['url'] ?>">
 							<img src="<?= $value['img'] ?>">
 							<h2 class="program-name"><?= $value['title'] ?></h2>

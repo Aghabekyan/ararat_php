@@ -30,18 +30,7 @@
 				</select>
 			</div>
 			
-			<div class="wrapper">
-				<div id="widget">
-					<div id="widgetField">
-						<span><?= $from.' - '.$to ?></span>
-						<a href="#">Select date range</a>
-					</div>
-					<div id="widgetCalendar">
-					</div>
-				</div>
-				<input type="hidden" name="dp-from">
-				<input type="hidden" name="dp-to">
-			</div>
+
 
 			<input type="submit" class="datepicker-smb" value="Փնտրել">	
 		</form>

@@ -1,7 +1,5 @@
 		<footer clearfix>
-            <div class="copyRight">
-                Տեխնիկական հարցերով, կայքի կամ ադմինիստրատիվ մասի հետ խնդիրներ ունենալու դեպքում դիմել Sargssyan Studio: Հեռախոս` 091 40 56 70:
-            </div>
+     
 		</footer>
 		
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>

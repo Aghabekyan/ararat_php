@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Nyut.am | <?= $t['header']['arm_news']?></title>
+        <title>Ararat TV | Admin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -48,11 +48,6 @@
             <div class="header-name"><?= $t['header']['user']?> <?= $activeUser['name'] ?></div>
             <div class="header_right clearfix">
 
-                <div class="lang_bar">
-                    <a href="<?= langChanger(array('l' => 'en', 'a' => 1)) ?>" class="adm_lang_btn <?= $lang['name'] == 'en' ? 'active_lang' : '' ?>">EN</a>
-                    <a href="<?= langChanger(array('l' => 'ru', 'a' => 1)) ?>" class="adm_lang_btn <?= $lang['name'] == 'ru' ? 'active_lang' : '' ?>">RU</a>
-                    <a href="<?= langChanger(array('l' => 'am', 'a' => 1)) ?>" class="adm_lang_btn <?= $lang['name'] == 'am' ? 'active_lang' : '' ?>">AM</a>
-                </div>
                 <div class="choose_sbd">
                 <? if (!empty($subdomains)): ?>
                     <? if (isset($_GET['person_id'])): ?>                

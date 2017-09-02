@@ -69,6 +69,7 @@
 				'url'   => createURL("p={$value['id']}", $value['title']),
 				'img'   	=> !empty($value['img']) ? thumb($value['img'], 240, 150) : (!empty($youtube) ? yt_img($youtube, 240, 150) : ''),	
 				'date' 	=> $post_time == $current_time ? $t['items']['today'].' - '.convertDate('Y-m-d G:i:s', 'G:i',$value['published']) : $value['published'],	
+				'yt_img'  => !empty($value['youtube']) ? 1 : 0,
 			);
 		}
 	}
@@ -83,7 +84,7 @@
 
 	$cat_name = isset($catses[$cat_id]) ? $catses[$cat_id] : '';
 	
-	$page_title = 'Nyut.am | ' . $cat_name;
+	$page_title = 'Ararat TV | ' . $cat_name;
 
 	require(bDIR.'/engine/templates/header.php');
 	require(bDIR.'/engine/templates/cat.php');

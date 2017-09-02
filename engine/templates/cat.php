@@ -6,7 +6,7 @@
 				<? foreach ($data as $value): ?>
 					<li class="col-25">
 					   <a href="<?= $value['url'] ?>">
-							<div class="icon-youtube-play">
+							<div class="<?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 								<img src="<?= $value['img'] ?>">
 							</div>
 							<h3><span class="date"><?= $value['date'] ?></span><?= $value['title'] ?></h3>

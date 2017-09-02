@@ -1,25 +1,5 @@
 $(function() {
-	 /*$('.slider-for').waSlider({
-	  'autoplay': true,
-	  'speed': 5000,
-	  'slidesToScroll': 1,
-	  'marginsBtwnSlides': 20,
-	  'waResponsive': true,
-	  'arrows': true,
-	  'dots': true,
-	  'swipe': true,
-	  'animation':'cssEase'
-	});*/
-	/*$('.fotorama').fotorama();*/
-	/*$('.currency').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  dots: false,
-	  arrows: true,
-	  centerMode: true,
-	  focusOnSelect: false,
-	  variableWidth: true
-	});*/
+
 	$(window).scroll(function() {
 		var scrollTop = $(this).scrollTop();
 		if(scrollTop > 45) {
@@ -60,11 +40,22 @@ $(function() {
 	});
 
 
-
-
 	// Weather ------------------------------------------------------------------------------------------------------------------------------------------ //
 
-	$('.weather').weatherfeed(['2214662']);
+
+	$.simpleWeather({
+	location: 'yerevan',
+	woeid: '',
+	unit: 'c',
+	success: function(weather) {
+	  $(".deg").html(weather.temp)
+	},
+	error: function(error) {
+	  console.log('WERR');
+	}
+	});
+
+
 
 	// Clock --------------------------------------------------------------------------------------------------------------------------- //
 
@@ -76,7 +67,7 @@ $(function() {
 	setInterval( function() {
 
 		var minutes = new Date().getMinutes();
-		$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+		$("#minutes").html(( minutes < 10 ? "0" : "" ) + minutes);
 
 	},1000);
 
@@ -88,6 +79,29 @@ $(function() {
 	}, 1000);
 
 
+	// Rate ------------------------------------------------------------------------------------------------------------------------------------------ //
+
+	$.ajax({
+	    url: "?rate",
+	    type: "GET",
+	    // crossDomain : true,
+	    // xhrFields: {
+	    //     withCredentials: true
+	    // },
+	    success: function(data) {
+	    	var res = data.split(" ");
+	    	$(".curr_usd").html("USD " + res[0])
+	    	$(".curr_eur").html("EUR " + res[1])
+	    	$(".curr_rub").html("RUB " + res[2])
+	        // console.log(res[0]);
+	    	console.log(res)
+	    },
+	    error: function(xhr) {
+	        //Do Something to handle error
+	    }
+	});
+
+
 
 	// setCookie ------------------------------------------------------------------------------------------------------------------------------------------ //
 
@@ -95,7 +109,7 @@ $(function() {
 		var post_id = $('#make-count').data('id');
 
 		if (typeof getCookie(post_id) === "undefined" ) {
-			var url = htmDIR + '?ajax_snippets';
+			var url = '/?ajax_snippets';
 			$.post(url, { 
 				id: post_id,
 				action: 'hitcounter',

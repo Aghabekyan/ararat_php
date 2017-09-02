@@ -66,6 +66,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="fotorama.4.6.3/fotorama/fotorama.js"></script>
     <script type="text/javascript" src="js/carouFredSel/jquery.carouFredSel-6.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.simpleWeather.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
   </footer>

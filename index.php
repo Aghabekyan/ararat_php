@@ -9,7 +9,9 @@
 		require(bDIR.'/engine/translations/'.$lang['name'].'.php');
 	ob_end_clean();
 	
-	$validRoutes = array('p', 'cat', 'timeline', 's', 'rss', 'sitemap', 'about', 'contacts', 'ajax_snippets', 'rss', 'news_line');
+	$validRoutes = array('p', 'cat', 'timeline', 's', 'rss',
+						 'sitemap', 'about', 'contacts',
+						 'ajax_snippets', 'rss', 'news_line', 'rate');
 
 	$fb_location = array('am' => 'hy_AM', 'ru' => 'ru_RU');
 

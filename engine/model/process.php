@@ -45,6 +45,7 @@
 				'date'      => $date,
 				'url'       => createURL("p={$value['id']}", $value['title']),
 				'cat_id'    => !empty($value['cat_id']) ? $value['cat_id'] : '',
+				'yt_img'  => !empty($value['youtube']) ? 1 : 0,
 				
 			);
 	
@@ -154,7 +155,7 @@
 				'date'  => $date,
 				'img'	=> !empty($value['img']) ? ret_img($value['img'], $width, $height) : (!empty($value['youtube']) ? yt_img($value['youtube'], $width, $height) : ''),
 				'url'   => createURL("p={$value['id']}", $value['title']),
-				'logo'  => '',
+				'yt_img'  => !empty($value['youtube']) ? 1 : 0,
 			);
 		}
 		return $data;

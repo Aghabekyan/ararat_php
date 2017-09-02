@@ -14,21 +14,18 @@
 		<header>
 			<div class="info-container">
 				<ul class="container clearfix">
-					<li class="date left">Երևան 18.07.2017<span class="time">23:41</span></li>
+					<li class="date left">Երևան <?= date("d.m.Y") ?><span class="time"><span id="hours">00</span><span id="sec">:</span><span id="minutes">00</span></span></li>
 					<li class="weather left"><span class="deg">31</span></li>
 					<li class="currency left">
 						<ul>
 							<li>
-								<span class="currency-name">USD 478.82</span>
+								<span class="currency-name curr_usd">USD</span>
 							</li>
 							<li>
-								<span class="currency-name">GBP 622.85</span>
+								<span class="currency-name curr_eur">EUR</span>
 							</li>
 							<li>
-								<span class="currency-name">EUR 557.59</span>
-							</li>
-							<li>
-								<span class="currency-name">RUB 8.14</span>
+								<span class="currency-name curr_rub">RUB</span>
 							</li>
 						</ul>
 					</li>

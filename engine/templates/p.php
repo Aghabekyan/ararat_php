@@ -46,7 +46,7 @@
 		<ul class="col-30">
 			<li>
 				<a href="#">
-					<div class="col-40 icon-youtube-play">
+					<div class="col-40 <?= $value['yt_img'] ? 'icon-youtube-play' : '' ?>">
 						<img src="images/slide3.jpg">
 					</div>
 					<h3 class="col-60">Հայ օդաչուի սխրանքը՝ Ստամբուլի օդանավակայանում <span class="date">29.07.2017</span></h3>
